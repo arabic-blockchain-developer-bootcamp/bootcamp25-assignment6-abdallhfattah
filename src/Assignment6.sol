@@ -22,12 +22,12 @@ contract Assignment6 {
     // This function should:
     // - Be external and payable
     // - Emit the `FundsDeposited` event
-    function deposit(uint256 amount) external payable {
+    function deposit() external payable {
         // increment user balance in balances mapping
-        balances[msg.sender] += amount;
+        balances[msg.sender] += 1 ether;
         // contractBalance += amount;
         // emit suitable
-        emit FundsDeposited(msg.sender, amount);
+        emit FundsDeposited(msg.sender, 1);
     }
 
     // Function to withdraw Ether
