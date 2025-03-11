@@ -7,7 +7,7 @@ contract Assignment6 {
     // 2. Declare an event called `FundsWithdrawn` with parameters: `receiver` and `amount`
     event FundsWithdrawn(address receiver, uint256 amount);
     // 3. Create a public mapping called `balances` to tracker users balances
-    mapping(address => uint256) balances;
+    mapping(address => uint256) public balances;
 
     // uint256 contractBalance;
 
