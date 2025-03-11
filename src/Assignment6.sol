@@ -2,8 +2,8 @@
 pragma solidity ^0.8.13;
 
 contract Assignment6 {
-    event FundsDeposited(address sender, uint256 amount);
-    event FundsWithdrawn(address receiver, uint256 amount);
+    event FundsDeposited(address indexed sender, uint256 amount);
+    event FundsWithdrawn(address indexed receiver, uint256 amount);
 
     mapping(address => uint256) public balances;
 
